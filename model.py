@@ -4,7 +4,7 @@ import torch.nn.functional as F
 import math
 import torchvision.models as models
 from resnet import ResNet1D
-from UtilsLayer import AttentionLSTM, SELayer, BahdanauAttention
+from layer import AttentionLSTM, SELayer, BahdanauAttention
 
 class FCN(nn.Module):
     def __init__(self, input_size=81, momentum=0.99, eps=0.001):
